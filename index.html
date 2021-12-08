@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Vaccination </title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    
+    <div class="main">
+        <h2>Search nearby vaccination centre</h2>
+        <form onsubmit="createData(event)">
+        <input type="text" placeholder="Please enter your pin code" class="intPin">
+        <input type="date" class="intDate">
+        <input type="submit" value="Submit" class="btn">
+         </form>
+    </div>
+    <div class="tb">
+        <table>
+        <thead>
+            <tr>
+                <th>Sr.</th>
+                <th>Date</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Center-id</th>
+                <th>Slots</th>
+                <th>Available</th>
+                <th>vaccine Name</th>
+            </tr>
+        </thead>
+        <tbody class="table_data"></tbody>
+    </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
